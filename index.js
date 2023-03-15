@@ -20,8 +20,6 @@ app.get("/", (req, res) => {
   res.send("APP is Running.");
 });
 
-console.log(process.env.MONGO_DB_USERNAME);
-
 const CONNECTION_URL = `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@cluster0.jee9o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const PORT = process.env.PORT || 5000;
 
